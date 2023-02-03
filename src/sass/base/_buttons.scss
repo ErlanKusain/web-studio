@@ -1,6 +1,12 @@
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 45px;
-    color: $main-color;
+    background-color: $main-color;
     border-radius: 30px;
+    a {
+        text-decoration: none;
+    }
 }

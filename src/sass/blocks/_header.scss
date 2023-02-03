@@ -34,4 +34,29 @@
             }       
         }
     }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 200px;
+        width: 830px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__button {
+        margin: 0 auto;
+        margin-top: 50px;
+        a {
+            color: #fff;
+        }
+    }
 }
