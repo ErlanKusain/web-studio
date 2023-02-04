@@ -41,6 +41,11 @@
             color: #999999 ;
             margin-top: 13px;
         }
+        &-descr {
+            display: grid;
+            grid-template-rows: 70px 65px;
+            row-gap: 5px;
+        }
     }
     &__button {
         margin: 0 auto;

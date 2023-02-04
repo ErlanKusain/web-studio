@@ -1,0 +1,21 @@
+.high-dev{
+    min-height: 800px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,500px);
+        column-gap: 120px;
+    }   
+    &__inner {
+        margin-top: 50px;
+    }
+    &__projects {
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(5,105px);
+        justify-content: space-between;
+    }
+}
