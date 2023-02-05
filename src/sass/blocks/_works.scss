@@ -1,0 +1,52 @@
+.works {
+    min-height: 900px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background: url(../img/bg/bg-thirdy.png) no-repeat;
+    background-size: 100% 50%;
+    &__block {
+        display: grid;
+        grid-template-columns: 540px 200px;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #fff;
+    }
+    &__button {
+        margin-top: 20px;
+        a {
+            color: #fff;
+        }
+    }
+    &__item {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        justify-content: center;
+        column-gap: 30px;
+    }
+    &__items {
+        display: grid;
+        row-gap: 30px;
+        &-descr {
+            display: grid;
+            grid-template-rows: 20px 120px;
+            justify-content: center;
+            row-gap: 30px;
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #999999;
+        }
+        &-link {
+            a {
+                color: $main-color;
+            }
+        }
+    }
+}
