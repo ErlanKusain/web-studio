@@ -6,7 +6,11 @@
     height: 45px;
     background-color: $main-color;
     border-radius: 30px;
+    cursor: pointer;
     a {
         text-decoration: none;
+    }
+    &:hover {
+        box-shadow: 5px 10px 50px $main-color;
     }
 }

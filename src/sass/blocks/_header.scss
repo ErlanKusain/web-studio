@@ -16,6 +16,10 @@
                 font-weight: 500;
                 text-decoration: none;
                 color: #fff;
+                transition: 0.6s all;
+                &:hover{
+                    color: $main-color;
+                }
             } 
             &-link{
                 &_active {
