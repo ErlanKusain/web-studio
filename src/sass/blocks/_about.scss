@@ -64,6 +64,7 @@
             text-align: center;
         }
         .form {
+            position: relative;
             margin-top: 40px;
             display: grid;
             grid-template-columns: 300px 190px;
@@ -95,6 +96,15 @@
                 box-shadow: 1px 2px 3px 1px #999999;
                 cursor: pointer;
 
+            }
+            #email-error {
+                position: absolute;
+                top: 0;
+                width: 150px;
+                text-align: center;
+                left: 30px;
+                font-size: 13px;
+                color: red;
             }
         }
         &-data {
