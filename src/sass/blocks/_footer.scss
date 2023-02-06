@@ -1,0 +1,96 @@
+.footer {
+    min-height: 420px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #edeaea;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 250px 200px 200px 200px;
+        column-gap: 50px;
+        justify-content: space-between;
+        ul {
+            list-style-type: none;
+        }
+    }
+    &__items {
+        display: grid;
+        row-gap: 25px;
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+    &__item {
+        position: relative;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 20px;
+        a {
+            color: #999999; 
+        }
+        &::before {
+            content: url(../img/icons/right-arrow.svg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__contacts {
+        display: grid;
+        grid-template-rows: repeat(3,25px);
+        row-gap: 22px;
+        &-title{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        &-item {
+            &_first {
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 23px;
+                a {
+                    color: #999999;
+                } 
+                &::before {
+                    content: url(../../img/icons/email.svg);
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                }
+            }
+            &_second {
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 23px;
+                a {
+                    color: #999999;
+                } 
+                &::before {
+                    content: url(../../img/icons/call.svg);
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                }
+            }
+            &_thirdy {
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 23px;
+                a {
+                    color: #999999;
+                } 
+                &::before {
+                    content: url(../../img/icons/map.svg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

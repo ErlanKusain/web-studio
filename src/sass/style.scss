@@ -34,6 +34,9 @@ body {
     margin-top: 85px;
     background-color: #E0E0E0;
 }
+a {
+    text-decoration: none;
+}
 
 @import 'base/mixins';
 @import 'base/variables';
@@ -43,3 +46,4 @@ body {
 @import 'blocks/high-dev';
 @import 'blocks/works';
 @import 'blocks/about';
+@import 'blocks/footer';
