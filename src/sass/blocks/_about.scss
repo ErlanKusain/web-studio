@@ -64,8 +64,10 @@
             color: #999999;
             text-align: center;
         }
-        .form {
+        &-input {
             position: relative;
+        }
+        .form {
             margin-top: 40px;
             display: grid;
             grid-template-columns: 300px 190px;
@@ -81,6 +83,7 @@
                 border: #ebe8e88d;
                 padding: 10px 20px 10px 30px;
                 box-shadow: 1px 2px 3px 1px #999999;
+                z-index: 4;
             }
             button {
                 display: block;
@@ -95,15 +98,16 @@
                 font-weight: 500;
                 color: #fff;
                 box-shadow: 1px 2px 3px 1px #999999;
+                z-index: 5;
                 cursor: pointer;
 
             }
             #email-error {
                 position: absolute;
-                top: 0;
-                width: 150px;
+                top: 55px;
+                left: 20px;
                 text-align: center;
-                left: 30px;
+                width: 400px;
                 font-size: 13px;
                 color: red;
             }
