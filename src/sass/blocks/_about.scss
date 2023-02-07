@@ -49,10 +49,11 @@
     }
     &__form{
         // margin-top: 70px;
+        display: block;
         margin: 0 auto;
         padding-top: 70px;
         padding-bottom: 30px;
-        min-height: 350px;
+        height: 350px;
         &-title {
             font-size: 18px;
             font-weight: 600;
