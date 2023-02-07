@@ -37,6 +37,12 @@ body {
 a {
     text-decoration: none;
 }
+.menu__social {
+    display: none;
+}
+.divider-social {
+    display: none;
+}
 
 @import 'base/mixins';
 @import 'base/variables';

@@ -46,7 +46,6 @@
     } 
     .header {
         &__wrapper {
-            margin-top: 150px;
             width: 300px;
         }
         &__title {
@@ -56,6 +55,8 @@
             margin-top: 30px;
         }
         .menu {
+            position: fixed;
+            right: -100%;
             width: 75%;
             height: 100vh;
             justify-content: center;
@@ -63,13 +64,17 @@
             a {
                 font-size: 16px;
             }
+            &_active{
+                right: 0;
+            }
             &__nav {
                 position: fixed;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 top: 70px;
-                // right: -100%;
+
+
                 &-link {
                     margin-bottom: 25px;
                     &_active {
@@ -79,13 +84,63 @@
                     }
                 }
             }
+            &__social {
+                position: absolute;
+                display: block;
+                bottom: 130px;
+                img {
+                    width: 33px;
+                    height: 33px;
+                }
+            }
+            .divider-social {
+                position: absolute;
+                bottom: 130px;
+                display: block;
+                width: 145px;
+                height: 1px;
+                margin-top: 85px;
+                background-color: #E0E0E0;
+            }
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 12px;
+            z-index: 10;
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 5px;
+                transition: 0.6s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -3px;
+                    &:nth-child(1){ 
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
     }
     .button {
-        width: 150px;
-        height: 40px;
+        width: 180px;
+        height: 45px;
         a {
-            font-size: 12px;
+            font-size: 13px;
         }
     }
     .divider-menu {
